@@ -1,0 +1,43 @@
+{
+    "name": "lee-to/spiral-blade-bridge",
+    "type": "library",
+    "description": "Spiral Framework: Blade Adapter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Danil Shuysky",
+            "email": "thecutcode@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/view": "^9.0|^10.0",
+        "illuminate/collections": "^9.0|^10.0",
+        "spiral/core": "^3.0",
+        "spiral/views": "^3.0",
+        "spiral/framework": "^3.0"
+    },
+    "require-dev": {
+        "spiral/testing": "^2.0",
+        "phpunit/phpunit": "^9.5.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leeto\\SpiralBlade\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Leeto\\SpiralBlade\\Tests\\": "tests/src",
+            "Leeto\\SpiralBlade\\Tests\\App\\": "tests/app"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "spiral/composer-publish-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
